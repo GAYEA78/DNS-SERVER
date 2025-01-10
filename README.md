@@ -24,10 +24,10 @@ The DNS server provides the following core features:
 - A DNS zone file with records in the format:  
   
   NAME TTL CLASS TYPE RDATA
-  ```
+  
   Example:
   example.com 3600 IN A 192.0.2.1
-  www.example.com 3600 IN CNAME example.com
+  "www.example.com" 3600 IN CNAME "example.com"
   
 
 ## Usage
@@ -46,7 +46,7 @@ The DNS server provides the following core features:
 4. **Test the Server**:
    Use tools like `dig` or `nslookup` to query the server:
 
-   dig @127.0.0.1 -p 53 example.com
+   dig @127.0.0.1 -p 53 "example.com"
  
 
 ## Notes
